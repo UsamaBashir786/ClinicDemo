@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENT Specialist Dr. Usman Ahmed Sukhera – Clinic in Sahiwal</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ENT specialist Dr. Usman Ahmed Sukhera in Sahiwal – Ear, Nose, Throat treatment, appointments via WhatsApp or call.">
+    <meta name="keywords" content="ENT Sahiwal, ENT doctor Sahiwal, Ear Nose Throat treatment, ENT specialist Sahiwal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.drusmanahmed.com/">
+
+    <!-- Tailwind CSS & FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
     <style>
         * { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         body { background: #f8fafc; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif; }
         body[dir="rtl"] * { font-family: 'Noto Sans Arabic', 'Inter', sans-serif; }
-        /* Fix: Ensure FontAwesome icons don't get overridden by Arabic font */
         body[dir="rtl"] i, body[dir="rtl"] .fa, body[dir="rtl"] .fas, body[dir="rtl"] .fab { font-family: 'Font Awesome 6 Free' !important; }
         body[dir="rtl"] .fab { font-family: 'Font Awesome 6 Brands' !important; }
+        header{z-index: 99999 !important;}
         .medical-gradient { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
         .text-medical { color: #1e40af; }
         .language-btn { padding: 0.4rem 0.8rem; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; transition: all 0.3s ease; border: none; cursor: pointer; }
@@ -37,10 +46,49 @@
             .call-float { bottom: 5rem !important; left: 1.5rem !important; width: 3.5rem; height: 3.5rem; display: flex; align-items: center; justify-content: center; }
         }
     </style>
+
+    <!-- JSON-LD Schema for Local Business / Doctor -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Dr. Usman Ahmed Sukhera",
+      "image": "https://www.drusmanahmed.com/logo.png",
+      "@id": "https://www.drusmanahmed.com/",
+      "url": "https://www.drusmanahmed.com/",
+      "telephone": "+923054896666",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mall Mandi Chowk, Medsol, Street No. 1, Saeed Ullah Mokal Colony",
+        "addressLocality": "Sahiwal",
+        "addressRegion": "Punjab",
+        "postalCode": "57000",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 30.67,
+        "longitude": 73.1
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "15:00",
+          "closes": "20:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/drusmanahmed",
+        "https://www.instagram.com/drusmanahmed"
+      ]
+    }
+    </script>    
 </head>
 <body dir="ltr">
     <!-- Header with integrated language switcher -->
-    <header class="bg-white shadow-sm border-b sticky top-0 z-50">
+    <header class="bg-white shadow-sm border-b sticky top-0" >
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <div>
@@ -369,6 +417,7 @@
     </footer>
 
     <!-- Floating Buttons -->
+    <!-- Floating Buttons -->
     <a href="https://wa.me/923054896666" target="_blank" class="whatsapp-float fixed bottom-6 right-6 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl shadow-lg z-50 hover:scale-110 transition-transform">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -380,7 +429,7 @@
         // Year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Mobile menu
+        // Mobile menu toggle
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
@@ -543,7 +592,6 @@
             });
         }
 
-        // Initialize language buttons
         document.querySelectorAll('.language-btn').forEach(btn => {
             btn.addEventListener('click', () => switchLanguage(btn.dataset.lang));
         });
@@ -553,10 +601,8 @@
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    document.getElementById('mobile-menu').classList.add('hidden');
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                document.getElementById('mobile-menu').classList.add('hidden');
             });
         });
     </script>
