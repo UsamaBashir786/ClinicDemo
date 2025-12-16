@@ -1,155 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENT Specialist Dr. Usman Ahmed Sukhera – Clinic in Sahiwal</title>
-    <meta name="description" content="Expert ENT care in Sahiwal by Dr. Usman Ahmed Sukhera. Treatments for ear, nose, and throat conditions with appointment booking via WhatsApp.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        * {
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        body {
-            background: #f8fafc;
-        }
-        
-        .medical-blue {
-            background: #1e40af;
-        }
-        
-        .medical-gradient {
-            background: linear-gradient(to right, #1e40af, #3b82f6);
-        }
-        
-        .card-shadow {
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-        
-        .card-hover:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-            transform: translateY(-2px);
-            transition: all 0.3s ease;
-        }
-        
-        .section-title {
-            color: #1e293b;
-            font-weight: 600;
-        }
-        
-        .text-medical {
-            color: #1e40af;
-        }
-        
-        .btn-appointment {
-            background: #1e40af;
-            color: white;
-            padding: 14px 32px;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        
-        .btn-appointment:hover {
-            background: #1e3a8a;
-            transform: translateY(-1px);
-        }
-        
-        .service-card {
-            background: white;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s;
-        }
-        
-        .service-card:hover {
-            border-color: #1e40af;
+        * { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { background: #f8fafc; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        body[dir="rtl"] * { font-family: 'Noto Sans Arabic', 'Inter', sans-serif; }
+        /* Fix: Ensure FontAwesome icons don't get overridden by Arabic font */
+        body[dir="rtl"] i, body[dir="rtl"] .fa, body[dir="rtl"] .fas, body[dir="rtl"] .fab { font-family: 'Font Awesome 6 Free' !important; }
+        body[dir="rtl"] .fab { font-family: 'Font Awesome 6 Brands' !important; }
+        .medical-gradient { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
+        .text-medical { color: #1e40af; }
+        .language-btn { padding: 0.4rem 0.8rem; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; transition: all 0.3s ease; border: none; cursor: pointer; }
+        .language-btn.active { background: linear-gradient(to right, #1e40af, #3b82f6); color: white; }
+        .language-btn:not(.active) { background: #e5e7eb; color: #374151; }
+        .whatsapp-float { background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); animation: pulse-green 2s infinite; border: 3px solid white; }
+        .call-float { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4); animation: pulse-blue 2s infinite; border: 3px solid white; }
+        @keyframes pulse-green { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        @keyframes pulse-blue { 0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(59, 130, 246, 0); } 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); } }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); transform: translateY(-5px); }
+        .service-card { background: white; border: 1px solid #e2e8f0; height: 100%; }
+        .service-card:hover { border-color: #1e40af; background: linear-gradient(to bottom, #ffffff, #f8fafc); }
+        .section-title { color: #1e293b; font-weight: 700; position: relative; display: inline-block; }
+        .section-title::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(to right, #1e40af, #3b82f6); border-radius: 2px; }
+        .btn-appointment { background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%); color: white; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3); }
+        .btn-appointment:hover { background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(30, 64, 175, 0.4); }
+        @media (max-width: 768px) {
+            .whatsapp-float { bottom: 5rem !important; right: 1.5rem !important; width: 3.5rem; height: 3.5rem; display: flex; align-items: center; justify-content: center; }
+            .call-float { bottom: 5rem !important; left: 1.5rem !important; width: 3.5rem; height: 3.5rem; display: flex; align-items: center; justify-content: center; }
         }
     </style>
 </head>
-<body>
-    
-    <!-- Professional Header -->
-    <header class="border-b sticky top-0 z-10 bg-white shadow-sm">
-        <div class="container mx-auto px-4 py-4">
+<body dir="ltr">
+    <!-- Header with integrated language switcher -->
+    <header class="bg-white shadow-sm border-b sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <div>
-                    <h1 class="text-2xl font-bold text-gray-900">Dr. Usman Ahmed Sukhera</h1>
-                    <p class="text-sm text-gray-600">ENT Specialist & Surgeon</p>
+                    <h1 class="text-xl md:text-2xl font-bold text-gray-900" data-tr="doctor_name">Dr. Usman Ahmed Sukhera</h1>
+                    <p class="text-xs md:text-sm text-gray-600" data-tr="specialty">ENT Specialist & Surgeon</p>
                 </div>
-                <div class="flex gap-3">
-                    <a href="tel:+923054896666" class="hidden md:flex items-center gap-2 text-medical hover:text-blue-800">
-                        <i class="fas fa-phone"></i>
-                        <span class="font-medium">+92 305 4896666</span>
+                <nav class="hidden md:flex items-center space-x-4">
+                    <a href="#about" class="text-gray-700 hover:text-medical font-medium" data-tr="about">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-medical font-medium" data-tr="services">Services</a>
+                    <a href="#hours" class="text-gray-700 hover:text-medical font-medium" data-tr="timings">Timings</a>
+                    <a href="#location" class="text-gray-700 hover:text-medical font-medium" data-tr="location">Location</a>
+                    
+                    <!-- Language switcher in navbar -->
+                    <div class="flex items-center space-x-2 ml-2">
+                        <button class="language-btn active" data-lang="en"><i class="fas fa-globe mr-1"></i> English</button>
+                        <button class="language-btn" data-lang="ur"><i class="fas fa-globe mr-1"></i> اردو</button>
+                    </div>
+                    
+                    <a href="tel:+923054896666" class="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg shadow-md">
+                        <i class="fas fa-phone text-sm"></i><span data-tr="call_now">Call Now</span>
                     </a>
+                </nav>
+                <button id="menu-btn" class="md:hidden text-gray-700"><i class="fas fa-bars text-xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+            <div class="container mx-auto px-4 py-6 flex flex-col space-y-4">
+                <a href="#about" class="text-gray-700 font-medium py-2 border-b" data-tr="about">About</a>
+                <a href="#services" class="text-gray-700 font-medium py-2 border-b" data-tr="services">Services</a>
+                <a href="#hours" class="text-gray-700 font-medium py-2 border-b" data-tr="timings">Timings</a>
+                <a href="#location" class="text-gray-700 font-medium py-2 border-b" data-tr="location">Location</a>
+                
+                <!-- Language switcher in mobile menu -->
+                <div class="flex space-x-2 py-2 border-b">
+                    <button class="language-btn active flex-1" data-lang="en"><i class="fas fa-globe mr-1"></i> English</button>
+                    <button class="language-btn flex-1" data-lang="ur"><i class="fas fa-globe mr-1"></i> اردو</button>
                 </div>
+                
+                <a href="tel:+923054896666" class="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg">
+                    <i class="fas fa-phone"></i><span data-tr="call_now">Call Now</span>
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section - Clean & Professional -->
-    <section class="medical-gradient text-white py-16">
+    <!-- Hero -->
+    <section class="medical-gradient text-white pt-8 pb-16 md:py-16">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <div class="mb-4">
-                    <span class="inline-block bg-white/20 px-4 py-2 rounded-full text-sm">
-                        MBBS, ENT Specialist & Surgeon
-                    </span>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                    Expert ENT Care in Sahiwal
-                </h2>
-                <p class="text-xl mb-8 text-blue-100">
-                    Professional treatment for Ear, Nose & Throat conditions
-                </p>
+                <span class="inline-block bg-white/20 px-4 py-2 rounded-full text-sm mb-4" data-tr="qualification">MBBS, ENT Specialist & Surgeon</span>
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 leading-tight" data-tr="hero_title">Expert ENT Care in Sahiwal</h2>
+                <p class="text-lg md:text-xl mb-8 text-blue-100" data-tr="hero_subtitle">Professional treatment for Ear, Nose & Throat conditions</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+923054896666" class="btn-appointment inline-flex items-center justify-center gap-2">
-                        <i class="fas fa-phone-alt"></i>
-                        Call Now
+                    <a href="tel:+923054896666" class="btn-appointment inline-flex items-center justify-center gap-2 py-4 px-8 rounded-lg">
+                        <i class="fas fa-phone-alt"></i><span data-tr="call_apt">Call for Appointment</span>
                     </a>
-                    <a href="https://wa.me/923054896666" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3.5 rounded-lg font-medium inline-flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp text-xl"></i>
-                        WhatsApp
+                    <a href="https://wa.me/923054896666" target="_blank" class="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-lg font-medium inline-flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fab fa-whatsapp text-xl"></i><span data-tr="whatsapp">WhatsApp</span>
                     </a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                        <i class="fas fa-clock text-2xl mb-2"></i>
+                        <h3 class="font-semibold" data-tr="hours_quick">Mon-Sat: 3PM-8PM</h3>
+                        <p class="text-sm text-blue-100" data-tr="evening">Evening Clinic</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                        <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                        <h3 class="font-semibold">Mall Mandi Chowk</h3>
+                        <p class="text-sm text-blue-100">Sahiwal</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                        <i class="fas fa-stethoscope text-2xl mb-2"></i>
+                        <h3 class="font-semibold" data-tr="modern">Modern Equipment</h3>
+                        <p class="text-sm text-blue-100" data-tr="diagnosis">Advanced Diagnosis</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section - Simple & Clear -->
-    <section class="py-16 bg-white">
+    <!-- About -->
+    <section id="about" class="py-12 md:py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold section-title text-center mb-12">About the Doctor</h2>
-                
+                <h2 class="text-2xl md:text-3xl font-bold section-title text-center mb-12" data-tr="about_title">About the Doctor</h2>
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="md:col-span-2">
-                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6" data-tr="about_p1">
                             Dr. Usman Ahmed Sukhera is a qualified ENT specialist and surgeon based in Sahiwal. With years of professional experience, he provides comprehensive diagnosis and treatment for ear, nose, and throat conditions for patients of all ages.
                         </p>
-                        <p class="text-gray-700 text-lg leading-relaxed">
+                        <p class="text-gray-700 text-lg leading-relaxed" data-tr="about_p2">
                             The clinic is equipped with modern facilities to ensure accurate diagnosis and effective treatment plans tailored to each patient's needs.
                         </p>
                     </div>
-                    
                     <div class="space-y-4">
                         <div class="p-5 bg-blue-50 rounded-lg">
                             <div class="flex items-center gap-3 mb-2">
                                 <i class="fas fa-graduation-cap text-medical text-xl"></i>
-                                <h3 class="font-semibold text-gray-900">Qualification</h3>
+                                <h3 class="font-semibold text-gray-900" data-tr="qual">Qualification</h3>
                             </div>
-                            <p class="text-gray-600 text-sm">MBBS, ENT Specialist & Surgeon</p>
+                            <p class="text-gray-600 text-sm" data-tr="qual_text">MBBS, ENT Specialist & Surgeon</p>
                         </div>
-                        
                         <div class="p-5 bg-blue-50 rounded-lg">
                             <div class="flex items-center gap-3 mb-2">
                                 <i class="fas fa-hospital text-medical text-xl"></i>
-                                <h3 class="font-semibold text-gray-900">Experience</h3>
+                                <h3 class="font-semibold text-gray-900" data-tr="exp">Experience</h3>
                             </div>
-                            <p class="text-gray-600 text-sm">Several years of clinical practice</p>
+                            <p class="text-gray-600 text-sm" data-tr="exp_text">Several years of clinical practice</p>
                         </div>
                     </div>
                 </div>
@@ -157,67 +157,59 @@
         </div>
     </section>
 
-    <!-- Services - Clean Grid Layout -->
-    <section class="py-16 bg-gray-50">
+    <!-- Services -->
+    <section id="services" class="py-12 md:py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold section-title text-center mb-3">Medical Services</h2>
-                <p class="text-center text-gray-600 mb-12">Comprehensive ENT treatments available</p>
-                
+                <h2 class="text-2xl md:text-3xl font-bold section-title text-center mb-3" data-tr="services_title">Medical Services</h2>
+                <p class="text-center text-gray-600 mb-12" data-tr="services_sub">Comprehensive ENT treatments available</p>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Service 1 -->
                     <div class="service-card rounded-lg p-6 card-hover">
                         <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                             <i class="fas fa-ear-listen text-2xl text-medical"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Ear Care</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3" data-tr="ear">Ear Care</h3>
                         <ul class="text-gray-600 text-sm space-y-2">
-                            <li>• Ear infections</li>
-                            <li>• Hearing tests</li>
-                            <li>• Tinnitus management</li>
-                            <li>• Ear wax removal</li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="ear1">Ear infections</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="ear2">Hearing tests</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="ear3">Tinnitus management</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="ear4">Ear wax removal</span></li>
                         </ul>
                     </div>
-                    
-                    <!-- Service 2 -->
                     <div class="service-card rounded-lg p-6 card-hover">
                         <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                             <i class="fas fa-head-side-mask text-2xl text-medical"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Nose & Sinus</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3" data-tr="nose">Nose & Sinus</h3>
                         <ul class="text-gray-600 text-sm space-y-2">
-                            <li>• Sinusitis treatment</li>
-                            <li>• Nasal blockage</li>
-                            <li>• Allergy management</li>
-                            <li>• Nosebleeds</li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="nose1">Sinusitis treatment</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="nose2">Nasal blockage</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="nose3">Allergy management</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="nose4">Nosebleeds</span></li>
                         </ul>
                     </div>
-                    
-                    <!-- Service 3 -->
                     <div class="service-card rounded-lg p-6 card-hover">
                         <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                             <i class="fas fa-lungs text-2xl text-medical"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Throat Care</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3" data-tr="throat">Throat Care</h3>
                         <ul class="text-gray-600 text-sm space-y-2">
-                            <li>• Tonsillitis</li>
-                            <li>• Throat infections</li>
-                            <li>• Voice problems</li>
-                            <li>• Swallowing issues</li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="throat1">Tonsillitis</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="throat2">Throat infections</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="throat3">Voice problems</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="throat4">Swallowing issues</span></li>
                         </ul>
                     </div>
-                    
-                    <!-- Service 4 -->
                     <div class="service-card rounded-lg p-6 card-hover">
                         <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                             <i class="fas fa-user-md text-2xl text-medical"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Minor Surgery</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3" data-tr="surgery">Minor Surgery</h3>
                         <ul class="text-gray-600 text-sm space-y-2">
-                            <li>• Tonsillectomy</li>
-                            <li>• Ear tube placement</li>
-                            <li>• Polyp removal</li>
-                            <li>• Other procedures</li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="surgery1">Tonsillectomy</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="surgery2">Ear tube placement</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="surgery3">Polyp removal</span></li>
+                            <li><i class="fas fa-circle text-xs text-medical mr-2"></i><span data-tr="surgery4">Other procedures</span></li>
                         </ul>
                     </div>
                 </div>
@@ -225,42 +217,39 @@
         </div>
     </section>
 
-    <!-- Clinic Timings - Simple Table -->
-    <section class="py-16 bg-white">
+    <!-- Hours -->
+    <section id="hours" class="py-12 md:py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold section-title text-center mb-12">Clinic Hours</h2>
-                
+                <h2 class="text-2xl md:text-3xl font-bold section-title text-center mb-12" data-tr="hours_title">Clinic Hours</h2>
                 <div class="bg-white border-2 border-gray-200 rounded-lg overflow-hidden">
                     <div class="bg-gray-50 px-6 py-4 border-b">
                         <h3 class="font-semibold text-gray-900 flex items-center gap-2">
-                            <i class="fas fa-clock text-medical"></i>
-                            Operating Hours
+                            <i class="fas fa-clock text-medical"></i><span data-tr="op_hours">Operating Hours</span>
                         </h3>
                     </div>
                     <div class="p-6">
                         <div class="space-y-4">
                             <div class="flex justify-between items-center py-3 border-b">
-                                <span class="text-gray-700 font-medium">Monday - Saturday</span>
+                                <span class="text-gray-700 font-medium" data-tr="mon_sat">Monday - Saturday</span>
                                 <span class="text-gray-900 font-semibold">3:00 PM - 8:00 PM</span>
                             </div>
                             <div class="flex justify-between items-center py-3">
-                                <span class="text-gray-700 font-medium">Sunday</span>
-                                <span class="text-red-600 font-semibold">Closed</span>
+                                <span class="text-gray-700 font-medium" data-tr="sunday">Sunday</span>
+                                <span class="text-red-600 font-semibold" data-tr="closed">Closed</span>
                             </div>
                         </div>
-                        
                         <div class="mt-6 p-4 bg-blue-50 rounded-lg">
                             <p class="text-sm text-gray-700 mb-3">
                                 <i class="fas fa-info-circle text-medical mr-2"></i>
-                                For appointments, please call before visiting
+                                <span data-tr="apt_note">For appointments, please call before visiting</span>
                             </p>
                             <div class="flex flex-col sm:flex-row gap-3">
                                 <a href="tel:+923054896666" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium">
                                     <i class="fas fa-phone mr-2"></i>+92 305 4896666
                                 </a>
                                 <a href="https://wa.me/923054896666" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg font-medium">
-                                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                                    <i class="fab fa-whatsapp mr-2"></i><span data-tr="whatsapp">WhatsApp</span>
                                 </a>
                             </div>
                         </div>
@@ -270,105 +259,74 @@
         </div>
     </section>
 
-    <!-- Location - Map -->
-    <section class="py-16 bg-gray-50">
+    <!-- Location -->
+    <section id="location" class="py-12 md:py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold section-title text-center mb-3">Clinic Location</h2>
+                <h2 class="text-2xl md:text-3xl font-bold section-title text-center mb-3" data-tr="loc_title">Clinic Location</h2>
                 <p class="text-center text-gray-600 mb-8">
                     <i class="fas fa-map-marker-alt text-medical mr-2"></i>
-                    Mall Mandi Chowk, Medsol, Street No. 1, Saeed Ullah Mokal Colony, Sahiwal
+                    <span data-tr="address">Mall Mandi Chowk, Medsol, Street No. 1, Saeed Ullah Mokal Colony, Sahiwal</span>
                 </p>
-                
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.5!2d73.1!3d30.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQwJzEzLjIiTiA3M8KwMDYnMDAuMCJF!5e0!3m2!1sen!2s!4v1234567890"
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy"
-                        alt="Dr. Usman Ahmed Sukhera ENT Clinic in Sahiwal location map">
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
-                
                 <div class="text-center mt-6">
                     <a href="https://www.google.com/maps/search/Mall+Mandi+Chowk+Sahiwal" target="_blank" class="text-medical hover:text-blue-800 font-medium">
-                        <i class="fas fa-directions mr-2"></i>Get Directions
+                        <i class="fas fa-directions mr-2"></i><span data-tr="directions">Get Directions</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Patient Reviews -->
-    <section class="py-16 bg-white">
+    <!-- Reviews -->
+    <section id="reviews" class="py-12 md:py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold section-title text-center mb-12">Patient Reviews</h2>
-                
+                <h2 class="text-2xl md:text-3xl font-bold section-title text-center mb-12" data-tr="reviews_title">Patient Reviews</h2>
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
                         <div class="flex gap-1 mb-3 text-yellow-500">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 mb-3">"Professional and caring doctor. My sinus problem was treated effectively."</p>
-                        <p class="text-sm text-gray-500">— Patient</p>
+                        <p class="text-gray-700 mb-3" data-tr="rev1">"Professional and caring doctor. My sinus problem was treated effectively."</p>
+                        <p class="text-sm text-gray-500" data-tr="patient">— Patient</p>
                     </div>
-                    
                     <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
                         <div class="flex gap-1 mb-3 text-yellow-500">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 mb-3">"Highly recommended ENT specialist in Sahiwal. Clear diagnosis and treatment."</p>
-                        <p class="text-sm text-gray-500">— Patient</p>
+                        <p class="text-gray-700 mb-3" data-tr="rev2">"Highly recommended ENT specialist in Sahiwal. Clear diagnosis and treatment."</p>
+                        <p class="text-sm text-gray-500" data-tr="patient">— Patient</p>
                     </div>
-                    
                     <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
                         <div class="flex gap-1 mb-3 text-yellow-500">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 mb-3">"Clean clinic and doctor explains everything clearly and patiently."</p>
-                        <p class="text-sm text-gray-500">— Patient</p>
+                        <p class="text-gray-700 mb-3" data-tr="rev3">"Clean clinic and doctor explains everything clearly and patiently."</p>
+                        <p class="text-sm text-gray-500" data-tr="patient">— Patient</p>
                     </div>
-                </div>
-                
-                <div class="text-center mt-8">
-                    <a href="https://www.google.com/search?q=Dr+Usman+Ahmed+Sukhera+ENT+Sahiwal" target="_blank" class="inline-flex items-center gap-2 bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg font-medium transition-all">
-                        <i class="fab fa-google text-xl"></i>
-                        View All Google Reviews
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Banner -->
+    <!-- CTA -->
     <section class="medical-gradient py-12">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center text-white">
-                <h2 class="text-3xl font-bold mb-4">Book Your Appointment Today</h2>
-                <p class="text-lg mb-6 text-blue-100">Get professional ENT care from an experienced specialist</p>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4" data-tr="cta_title">Book Your Appointment Today</h2>
+                <p class="text-lg mb-6 text-blue-100" data-tr="cta_sub">Get professional ENT care from an experienced specialist</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="tel:+923054896666" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 inline-flex items-center justify-center gap-2">
-                        <i class="fas fa-phone"></i>
-                        Call Now
+                        <i class="fas fa-phone"></i><span data-tr="call_now">Call Now</span>
                     </a>
                     <a href="https://wa.me/923054896666" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
+                        <i class="fab fa-whatsapp"></i><span data-tr="whatsapp">WhatsApp</span>
                     </a>
                 </div>
             </div>
@@ -381,46 +339,226 @@
             <div class="max-w-5xl mx-auto">
                 <div class="grid md:grid-cols-3 gap-8 mb-8">
                     <div>
-                        <h3 class="text-xl font-bold mb-4">Dr. Usman Ahmed Sukhera</h3>
-                        <p class="text-gray-400 text-sm">ENT Specialist & Surgeon</p>
+                        <h3 class="text-xl font-bold mb-4" data-tr="doctor_name">Dr. Usman Ahmed Sukhera</h3>
+                        <p class="text-gray-400 text-sm" data-tr="specialty">ENT Specialist & Surgeon</p>
                         <p class="text-gray-400 text-sm">MBBS</p>
                     </div>
-                    
                     <div>
-                        <h4 class="font-semibold mb-4">Quick Links</h4>
+                        <h4 class="font-semibold mb-4" data-tr="quick_links">Quick Links</h4>
                         <ul class="space-y-2 text-gray-400 text-sm">
-                            <li><a href="#" class="hover:text-white">About</a></li>
-                            <li><a href="#" class="hover:text-white">Services</a></li>
-                            <li><a href="#" class="hover:text-white">Location</a></li>
-                            <li><a href="#" class="hover:text-white">Contact</a></li>
+                            <li><a href="#" class="hover:text-white" data-tr="about">About</a></li>
+                            <li><a href="#" class="hover:text-white" data-tr="services">Services</a></li>
+                            <li><a href="#" class="hover:text-white" data-tr="location">Location</a></li>
+                            <li><a href="#" class="hover:text-white" data-tr="contact">Contact</a></li>
                         </ul>
                     </div>
-                    
                     <div>
-                        <h4 class="font-semibold mb-4">Contact</h4>
+                        <h4 class="font-semibold mb-4" data-tr="contact">Contact</h4>
                         <ul class="space-y-3 text-gray-400 text-sm">
-                            <li>
-                                <i class="fas fa-map-marker-alt mr-2"></i>
-                                Mall Mandi Chowk, Sahiwal
-                            </li>
-                            <li>
-                                <i class="fas fa-phone mr-2"></i>
-                                <a href="tel:+923054896666" class="hover:text-white">+92 305 4896666</a>
-                            </li>
-                            <li>
-                                <i class="fab fa-whatsapp mr-2"></i>
-                                <a href="https://wa.me/923054896666" class="hover:text-white">WhatsApp</a>
-                            </li>
+                            <li><i class="fas fa-map-marker-alt mr-2"></i><span data-tr="footer_addr">Mall Mandi Chowk, Sahiwal</span></li>
+                            <li><i class="fas fa-phone mr-2"></i><a href="tel:+923054896666" class="hover:text-white">+92 305 4896666</a></li>
+                            <li><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/923054896666" class="hover:text-white" data-tr="whatsapp">WhatsApp</a></li>
                         </ul>
                     </div>
                 </div>
-                
                 <div class="border-t border-gray-800 pt-6 text-center">
-                    <p class="text-gray-400 text-sm">&copy; 2024 Dr. Usman Ahmed Sukhera. All rights reserved.</p>
+                    <p class="text-gray-400 text-sm">&copy; <span id="year"></span> <span data-tr="copyright">Dr. Usman Ahmed Sukhera. All rights reserved.</span></p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/923054896666" target="_blank" class="whatsapp-float fixed bottom-6 right-6 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl shadow-lg z-50 hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+923054896666" class="call-float fixed bottom-6 left-6 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl shadow-lg z-50 hover:scale-110 transition-transform">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <script>
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Translations
+        const translations = {
+            en: {
+                doctor_name: "Dr. Usman Ahmed Sukhera",
+                specialty: "ENT Specialist & Surgeon",
+                about: "About",
+                services: "Services",
+                timings: "Timings",
+                location: "Location",
+                call_now: "Call Now",
+                qualification: "MBBS, ENT Specialist & Surgeon",
+                hero_title: "Expert ENT Care in Sahiwal",
+                hero_subtitle: "Professional treatment for Ear, Nose & Throat conditions",
+                call_apt: "Call for Appointment",
+                whatsapp: "WhatsApp",
+                hours_quick: "Mon-Sat: 3PM-8PM",
+                evening: "Evening Clinic",
+                modern: "Modern Equipment",
+                diagnosis: "Advanced Diagnosis",
+                about_title: "About the Doctor",
+                about_p1: "Dr. Usman Ahmed Sukhera is a qualified ENT specialist and surgeon based in Sahiwal. With years of professional experience, he provides comprehensive diagnosis and treatment for ear, nose, and throat conditions for patients of all ages.",
+                about_p2: "The clinic is equipped with modern facilities to ensure accurate diagnosis and effective treatment plans tailored to each patient's needs.",
+                qual: "Qualification",
+                qual_text: "MBBS, ENT Specialist & Surgeon",
+                exp: "Experience",
+                exp_text: "Several years of clinical practice",
+                services_title: "Medical Services",
+                services_sub: "Comprehensive ENT treatments available",
+                ear: "Ear Care",
+                ear1: "Ear infections",
+                ear2: "Hearing tests",
+                ear3: "Tinnitus management",
+                ear4: "Ear wax removal",
+                nose: "Nose & Sinus",
+                nose1: "Sinusitis treatment",
+                nose2: "Nasal blockage",
+                nose3: "Allergy management",
+                nose4: "Nosebleeds",
+                throat: "Throat Care",
+                throat1: "Tonsillitis",
+                throat2: "Throat infections",
+                throat3: "Voice problems",
+                throat4: "Swallowing issues",
+                surgery: "Minor Surgery",
+                surgery1: "Tonsillectomy",
+                surgery2: "Ear tube placement",
+                surgery3: "Polyp removal",
+                surgery4: "Other procedures",
+                hours_title: "Clinic Hours",
+                op_hours: "Operating Hours",
+                mon_sat: "Monday - Saturday",
+                sunday: "Sunday",
+                closed: "Closed",
+                apt_note: "For appointments, please call before visiting",
+                loc_title: "Clinic Location",
+                address: "Mall Mandi Chowk, Medsol, Street No. 1, Saeed Ullah Mokal Colony, Sahiwal",
+                directions: "Get Directions",
+                reviews_title: "Patient Reviews",
+                rev1: "\"Professional and caring doctor. My sinus problem was treated effectively.\"",
+                rev2: "\"Highly recommended ENT specialist in Sahiwal. Clear diagnosis and treatment.\"",
+                rev3: "\"Clean clinic and doctor explains everything clearly and patiently.\"",
+                patient: "— Patient",
+                cta_title: "Book Your Appointment Today",
+                cta_sub: "Get professional ENT care from an experienced specialist",
+                quick_links: "Quick Links",
+                contact: "Contact",
+                footer_addr: "Mall Mandi Chowk, Sahiwal",
+                copyright: "Dr. Usman Ahmed Sukhera. All rights reserved."
+            },
+            ur: {
+                doctor_name: "ڈاکٹر عثمان احمد سکھیرا",
+                specialty: "ای این ٹی سپیشلسٹ اور سرجن",
+                about: "تعارف",
+                services: "خدمات",
+                timings: "اوقات",
+                location: "مقام",
+                call_now: "ابھی کال کریں",
+                qualification: "ایم بی بی ایس، ای این ٹی سپیشلسٹ اور سرجن",
+                hero_title: "ساہیوال میں ماہر ای این ٹی کا علاج",
+                hero_subtitle: "کان، ناک اور گلے کی بیماریوں کا پیشہ ورانہ علاج",
+                call_apt: "اپائنٹمنٹ کے لیے کال کریں",
+                whatsapp: "واٹس ایپ",
+                hours_quick: "پیر تا ہفتہ: شام 3 سے 8 بجے",
+                evening: "شام کا کلینک",
+                modern: "جدید آلات",
+                diagnosis: "جدید تشخیص",
+                about_title: "ڈاکٹر کے بارے میں",
+                about_p1: "ڈاکٹر عثمان احمد سکھیرا ساہیوال میں قابل ای این ٹی سپیشلسٹ اور سرجن ہیں۔ کئی سالوں کے پیشہ ورانہ تجربے کے ساتھ، وہ تمام عمر کے مریضوں کے لیے کان، ناک اور گلے کی بیماریوں کی مکمل تشخیص اور علاج فراہم کرتے ہیں۔",
+                about_p2: "کلینک جدید سہولیات سے لیس ہے تاکہ درست تشخیص اور ہر مریض کی ضروریات کے مطابق مؤثر علاج کی منصوبہ بندی کو یقینی بنایا جا سکے۔",
+                qual: "قابلیت",
+                qual_text: "ایم بی بی ایس، ای این ٹی سپیشلسٹ اور سرجن",
+                exp: "تجربہ",
+                exp_text: "کئی سالوں کی کلینیکل پریکٹس",
+                services_title: "طبی خدمات",
+                services_sub: "جامع ای این ٹی علاج دستیاب ہیں",
+                ear: "کان کی دیکھ بھال",
+                ear1: "کان کی انفیکشن",
+                ear2: "سماعت کا ٹیسٹ",
+                ear3: "ٹنیٹس کا انتظام",
+                ear4: "کان کی میل صاف کرنا",
+                nose: "ناک اور سائنس",
+                nose1: "سائنوسائٹس کا علاج",
+                nose2: "ناک کی بندش",
+                nose3: "الرجی کا انتظام",
+                nose4: "ناک سے خون آنا",
+                throat: "گلے کی دیکھ بھال",
+                throat1: "ٹانسلز کی سوزش",
+                throat2: "گلے کی انفیکشن",
+                throat3: "آواز کے مسائل",
+                throat4: "نگلنے میں مشکلات",
+                surgery: "چھوٹی سرجری",
+                surgery1: "ٹانسلز نکالنا",
+                surgery2: "کان میں ٹیوب لگانا",
+                surgery3: "پولپ نکالنا",
+                surgery4: "دیگر طریقہ کار",
+                hours_title: "کلینک کے اوقات",
+                op_hours: "کام کے اوقات",
+                mon_sat: "پیر تا ہفتہ",
+                sunday: "اتوار",
+                closed: "بند",
+                apt_note: "اپائنٹمنٹ کے لیے، براہ کرم آنے سے پہلے کال کریں",
+                loc_title: "کلینک کا مقام",
+                address: "مال منڈی چوک، میڈسول، سٹریٹ نمبر 1، سعید اللہ موکل کالونی، ساہیوال",
+                directions: "سمت حاصل کریں",
+                reviews_title: "مریضوں کے جائزے",
+                rev1: "\"پیشہ ور اور مہربان ڈاکٹر۔ میرے سائنس کے مسئلے کا مؤثر علاج کیا گیا۔\"",
+                rev2: "\"ساہیوال میں انتہائی تجویز کردہ ای این ٹی سپیشلسٹ۔ واضح تشخیص اور علاج۔\"",
+                rev3: "\"صاف کلینک اور ڈاکٹر ہر چیز کو واضح طور پر اور صبر سے سمجھاتے ہیں۔\"",
+                patient: "— مریض",
+                cta_title: "آج ہی اپنی اپائنٹمنٹ بک کریں",
+                cta_sub: "تجربہ کار ماہر سے پیشہ ورانہ ای این ٹی کا علاج حاصل کریں",
+                quick_links: "فوری لنکس",
+                contact: "رابطہ",
+                footer_addr: "مال منڈی چوک، ساہیوال",
+                copyright: "ڈاکٹر عثمان احمد سکھیرا۔ تمام حقوق محفوظ ہیں۔"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            document.body.dir = lang === 'ur' ? 'rtl' : 'ltr';
+            
+            // Update language buttons
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            // Update text content
+            document.querySelectorAll('[data-tr]').forEach(el => {
+                const key = el.dataset.tr;
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        // Initialize language buttons
+        document.querySelectorAll('.language-btn').forEach(btn => {
+            btn.addEventListener('click', () => switchLanguage(btn.dataset.lang));
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

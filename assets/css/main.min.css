@@ -1,0 +1,155 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: #f8fafc;
+        }
+        
+        .medical-blue {
+            background: #1e40af;
+        }
+        
+        .medical-gradient {
+            background: linear-gradient(to right, #1e40af, #3b82f6);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card-hover:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        
+        .section-title {
+            color: #1e293b;
+            font-weight: 600;
+        }
+        
+        .text-medical {
+            color: #1e40af;
+        }
+        
+        .btn-appointment {
+            background: #1e40af;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn-appointment:hover {
+            background: #1e3a8a;
+            transform: translateY(-1px);
+        }
+        
+ 
+        .card-shadow {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Card hover effect */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-3px);
+        }
+        
+        /* Service card icon animation */
+        .service-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            border-color: #1e40af;
+        }
+        
+        .service-card:hover .w-14 {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card .w-14 {
+            transition: transform 0.3s ease;
+        }
+        
+        /* Button animations */
+        .btn-appointment {
+            background: #1e40af;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-appointment:hover {
+            background: #1e3a8a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+        }
+        
+        /* Subtle pulse for phone icon in header */
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+        
+        header a:hover i {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        
+        /* Review card animation */
+        .bg-gray-50.rounded-lg {
+            transition: all 0.3s ease;
+        }
+        
+        .bg-gray-50.rounded-lg:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Star rating subtle animation */
+        .text-yellow-500 i {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        
+        .text-yellow-500:hover i {
+            transform: scale(1.1);
+        }
+        
+        /* Smooth transitions for all links */
+        a {
+            transition: all 0.2s ease;
+        }
+        
+        /* Section title */
+        .section-title {
+            color: #1e293b;
+            font-weight: 600;
+        }
+        
+        .text-medical {
+            color: #1e40af;
+        }
+        
+        /* Smooth border animation for input focus */
+        .border-2:focus {
+            transition: border-color 0.3s ease;
+        }
